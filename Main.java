@@ -1,4 +1,7 @@
 
+import java.util.Scanner;
+
+
 //         System.out.println("enter the marks of science");
 //         int science=sc.nextInt();
 //         System.out.println("enter the marks of kannada");
@@ -287,14 +290,52 @@
 //         } while (i<5);
 //     }
 // }
+//-------------------------------------------------------
 
+// public class Main{
+//     public static void main(String[] args) {
+        
+//         // int n=0;
+//         for (int i = 9; i > 0; i--) {
+//             System.out.println(i);
+
+//         if(i==2){
+//             System.out.println("ending is loop");
+//         break;
+//         }
+//         }
+//     }
+// }
+
+// ------------------------------------------------------------------
+
+// public class Main{
+//     public static void main(String[] args) {
+//         for(int i=0;i<5;i++){
+//             for(int j=0;j<i;j++){
+//                 System.out.print("* ");
+//             }
+//             System.out.println();
+
+//         }
+//     }
+// }
+
+
+//for (int i=0;i<5;i++){
+//for(int j=0;j<i;j++)}{
+//print("*")
+//print("\n")}
 
 public class Main{
     public static void main(String[] args) {
-        
-        // int n=0;
-        for (int i = 9; i > 0; i--) {
-            System.out.println(i);
+        int sum=0;
+        System.out.println("enter the number");
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        for(int i=0;i<n;i++){
+            sum=sum+(2*i);
         }
+        System.out.println(sum);
     }
 }
