@@ -1,8 +1,4 @@
 
-import java.util.Scanner;
-
-
-//         System.out.println("enter the marks of science");
 //         int science=sc.nextInt();
 //         System.out.println("enter the marks of kannada");
 //         int kannada=sc.nextInt();
@@ -152,6 +148,7 @@ import java.util.Scanner;
 //         }
 //     }
 // }
+//--------------------------------------------------------------------
 
 // public class Main{
 //     public static void main(String[] args) {
@@ -177,7 +174,7 @@ import java.util.Scanner;
 //         }
 //     }
 // }
-
+//-------------------------------------------------------------
 // public class Main{
 //     public static void main(String[] args) {
 //         int a=10;
@@ -190,6 +187,7 @@ import java.util.Scanner;
 //     }
 // }
 
+//-------------------------------------------------------------
 // public class Main{
 //     public static void main(String[] args) {
 //         int day;
@@ -227,6 +225,7 @@ import java.util.Scanner;
 //     }
 // }
 
+//-------------------------------------------------------------
 // public class Main{
 //     public static void main(String[] args) {
 //         Scanner sc=new Scanner(System.in);
@@ -248,6 +247,7 @@ import java.util.Scanner;
 //     }
 // }
 
+//-------------------------------------------------------------------
 // public class Main{
 //     public static void main(String[] args) {
 //         Random rand = new Random();
@@ -275,6 +275,7 @@ import java.util.Scanner;
 //     }
 // }
 
+//----------------------------------------------------------------
 // public class Main{
 //     public static void main(String[] args) {
         // int i=100;
@@ -327,17 +328,57 @@ import java.util.Scanner;
 //print("*")
 //print("\n")}
 
+// public class Main{
+//     public static void main(String[] args) {
+//         int sum=0;
+//         System.out.println("enter the number");
+//         Scanner sc=new Scanner(System.in);
+//         int n=sc.nextInt();
+//         for(int i=0;i<n;i++){
+//             sum=sum+(2*i);
+//         }
+//         System.out.println(sum);
+//     }
+// }
+
+//------------------------------------------------------------
+// public class Main{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         System.out.println("enter the table number");
+//         int num=sc.nextInt();
+
+//         for(int i=11;i>0;i--){
+//             System.out.println(num+"X"+i+"="+num*i);
+//         }
+//     }
+// }
+
+//-----------------------------------------------------------
+// public class Main{
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         System.out.println("enter the number:");
+//         int n=sc.nextInt();
+//         int factorial=1;
+//         for(int i=1;i<=n;i++){
+//             factorial=factorial*i;
+//         }
+//         System.out.println(factorial);
+        
+//     }
+// }
+//------------------------------------------------------
+
 public class Main{
     public static void main(String[] args) {
-        int sum=0;
-        System.out.println("enter the number");
-        Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        for(int i=0;i<n;i++){
-            sum=sum+(2*i);
+        int n=5;
+        int factorial=1;
+        int i=1;
+        while(i<=n){
+            factorial=factorial*i;
+            i++;
         }
-        System.out.println(sum);
+        System.out.println(factorial);
     }
 }
-
-hello world
