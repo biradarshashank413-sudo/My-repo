@@ -370,15 +370,92 @@
 // }
 //------------------------------------------------------
 
+// public class Main{
+//     public static void main(String[] args) {
+//         int n=5;
+//         int factorial=1;
+//         int i=1;
+//         while(i<=n){
+//             factorial=factorial*i;
+//             i++;
+//         }
+//         System.out.println(factorial);
+//     }
+// }
+// --------------------------------------------------------
+
+// public class Main{
+//     public static void main(String[] args) {
+//         // int [] marks = new int[5];
+//         int [] marks={1,2,3,4,5};
+//         // marks[0]=22;
+//         // marks[1]=2;
+//         // marks[2]=222;
+//         // marks[3]=2222;
+//         // System.out.println(marks.length);
+//         for(int i=0;i<marks.length;i++){
+//             System.out.println(marks[i]);
+//         }
+//         System.out.println("reverse order marks");
+//         for(int i=marks.length -1;i>=0;i--){
+//             System.out.println(marks[i]);
+//         }
+//         // System.out.println(marks[1]);
+//     }
+// }
+
+// -----------------------------------------------------
+
+// public class Main{
+//     public static void main(String[] args) {
+//         int [] marks;
+//         int [][] flats;
+//         flats = new int[2][3];
+//         flats[0][0]=101;
+//         flats[0][1]=102;
+//         flats[0][2]=102;
+//         flats[1][0]=201;
+//         flats[1][1]=202;
+//         flats[1][2]=203;
+//         System.out.println("printing an 2-D array");
+//         for(int i=0;i<flats.length;i++){
+//             for(int j=0;j<flats[i].length;j++){
+//                 System.out.print(flats[i][j]);
+//                 System.out.print(" ");
+//             }
+//             System.out.println("");
+//         }
+//     }
+// }
+
+// public class Main{
+//     public static void main(String[] args) {
+//         float [] marks={0.1f,0.2f,0.3f,0.4f,0.5f};
+//         float sum=0;
+//         for(float element:marks){
+//             sum=sum+element;
+//         }
+//         System.out.println("the value of sum is"+sum);
+//     }
+// }
+
 public class Main{
     public static void main(String[] args) {
-        int n=5;
-        int factorial=1;
-        int i=1;
-        while(i<=n){
-            factorial=factorial*i;
-            i++;
+        float [] marks={0.1f,0.2f,0.3f,0.4f,0.5f};
+        float num=0.221f;
+        boolean isanarray=false;
+        for(float element:marks){
+            if(num==element){
+                isanarray=true;
+                break;
+            }
         }
-        System.out.println(factorial);
+        if(isanarray){
+            System.out.println("this number is present");
+
+        }
+        else{
+            System.out.println("number is not prresent");
+        }
     }
 }
