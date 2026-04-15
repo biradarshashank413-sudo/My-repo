@@ -1,5 +1,4 @@
 
-//         int science=sc.nextInt();
 //         System.out.println("enter the marks of kannada");
 //         int kannada=sc.nextInt();
 //         System.out.println("enter the marks of bio");
@@ -427,7 +426,7 @@
 //         }
 //     }
 // }
-
+// ----------------------------------------------------------------
 // public class Main{
 //     public static void main(String[] args) {
 //         float [] marks={0.1f,0.2f,0.3f,0.4f,0.5f};
@@ -438,24 +437,133 @@
 //         System.out.println("the value of sum is"+sum);
 //     }
 // }
+// --------------------------------------------------------------
+// public class Main{
+//     public static void main(String[] args) {
+//         float [] marks={0.1f,0.2f,0.3f,0.4f,0.5f};
+//         float num=0.221f;
+//         boolean isanarray=false;
+//         for(float element:marks){
+//             if(num==element){
+//                 isanarray=true;
+//                 break;
+//             }
+//         }
+//         if(isanarray){
+//             System.out.println("this number is present");
+
+//         }
+//         else{
+//             System.out.println("number is not prresent");
+//         }
+//     }
+// }
+// -------------------------------------------------------------------
+// public class Main{
+//     static int logic(int x, int y){
+//         // int z;
+//         // if(x>y){
+//         //     z=x+y;
+//         // }
+//         // else{
+//         //     z=(x+y)*4;
+//         // }
+//         return x+y;
+//     }
+//     public static void main(String[] args) {
+//         // int a=7;
+//         // int b=6;
+//         int c;
+//         c=logic(7,8);
+//         System.out.println(c);
+//     }
+// } 
+// ----------------------------------------------------------------
+// public class Main{
+//     static void change(int a){
+//         a=90;
+//     }
+//     public static void main(String[] args) {
+//     int [] marks={1,2,3,4,5};
+//     int x=35;
+//     change(x);
+//     System.out.println("the value of x is"+ x);
+//     }
+// }   
+
+// Functions example
+// ---------------------------------------------------------------------
+// public class Main{
+//     static void foo(int a){
+//         System.out.println("good morning " + a + " bro!");
+//     }
+//     static int add(int a, int b){
+//         return a+b;
+//     }
+//     static int add(int a, int b, int c){
+//         return a+b+c;
+//     }
+//     public static void main(String[] args) {
+//         // foo( );
+//         foo(300);
+//         // add(23,33);
+//         System.out.println(add(23,33));
+//         System.out.println(add(22,33,33));
+//     }
+// }
+
+// -------------------------------------------------------------------
+// recursion example
+
+// public class Main{
+//     static int factorial(int n){
+//         if(n==0 || n==1){
+//             return 1;
+//         }
+//         return n*factorial(n-1);
+//     }
+//     public static void main(String[] args) {
+//         // int n=4;
+//         Scanner sc=new Scanner(System.in);
+//         System.out.println("ENter the number :");
+//         int n=sc.nextInt();
+//         System.out.println("the factorial of number is :"+ factorial(n));
+//     }
+// }
+
+
+// public class Main{
+//     static int fibonacci(int n){
+//         if(n==0){
+//             return 0;
+//         }
+//         else if(n==1){
+//             return 1;
+//         }
+//         else{
+//             return fibonacci(n-1)+fibonacci(n-2);
+//         }
+//     }
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         System.out.println("enter the number :");
+//         int n=sc.nextInt();
+//         System.out.println("the "+n+"th term of fibonacci series is :"+fibonacci(n));
+//     }
+// }
+
 
 public class Main{
-    public static void main(String[] args) {
-        float [] marks={0.1f,0.2f,0.3f,0.4f,0.5f};
-        float num=0.221f;
-        boolean isanarray=false;
-        for(float element:marks){
-            if(num==element){
-                isanarray=true;
-                break;
-            }
-        }
-        if(isanarray){
-            System.out.println("this number is present");
 
-        }
-        else{
-            System.out.println("number is not prresent");
+    static void pattern(int n){
+        for(int i=0;i<n;i++){  // this line is for number of rows
+            for(int j=0;j<i+1;j++){ //this line is for number of star to be printed
+                System.out.print("*");
+            }
+            System.out.println();
         }
     }
-}
+    public static void main(String[] args) {
+        pattern(4);
+    }
+} 
