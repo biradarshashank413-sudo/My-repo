@@ -1,0 +1,121 @@
+# # version: 3.2
+# chai_type: masala_chai
+# sport: football
+# sleep: bed
+
+# chai_recipe:
+#   base: milk
+#   powder: tea
+
+# chai_name: masala_chai
+# description: "chai with the biscuit"
+
+# brewing_instruction: |
+#   boil water
+#   add milk water
+#   add milk
+
+# is_hot: true
+# is_cold: false
+
+# local_time: 2025-01-02 08:30:38
+
+# sports: -football
+#   -cricket
+#   -tennis
+#   -hockey
+# # this is list or an array
+
+# foods:
+#   - name: traditional
+#     varities: -plaindosa
+#       -masala dosa
+#       -onion dosa
+
+#   - name: modern
+#     varities: -vanilla
+#       -choco
+#       -strawbeerry
+
+# employee:
+#   name: shashank
+#   role: devops
+#   experience: 5 years
+#   skills:
+#       -docker
+#       -jenkins
+#       -kubernetes
+#       -ansible
+
+# ---
+# - hosts: all
+#   become: yes
+#   tasks:
+#     -name: "install nginx"
+#     apt:
+#       name: nginx
+#       state: present
+
+# fruits:
+#   -banana
+#   -apple
+#   -grapes
+#   -orange
+
+# employee:
+#   name: abhi
+#   age: 48
+
+# name: shashank
+# role: devops
+# city: banglore
+# fruits:
+#   -banana
+#   -mango
+#   -grapes
+#   -gauva
+
+# ---
+# - name: Install nginx
+#   hosts: all
+#   become: yes
+#   tasks:
+#     - name: "install nginx"
+#       yum:
+#         name: nginx
+#         state: present
+
+# ---
+# - school: st.mary's
+#   department:
+#     - name: science
+#       subjects:
+#         - physics
+#         - chemistry
+#         - biology
+#     - name: commerce
+#       subjects:
+#         - accounts
+#         - economics
+#         - business studies
+#     - name: arts
+#       subjects:
+#         -history
+#         -polictics
+#         -geo
+
+pipeline:
+  trigger:
+    - master
+  pool:
+    vmImage: "ubuntu-latest"
+
+  stages:
+    - stage: build app
+      displayName: "build app"
+      jobs:
+        -job: buildjob
+
+        steps:
+          - script: echo "building app"
+            displayName: "build app"
