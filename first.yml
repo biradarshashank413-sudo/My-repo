@@ -104,18 +104,32 @@
 #         -polictics
 #         -geo
 
-pipeline:
-  trigger:
-    - master
-  pool:
-    vmImage: "ubuntu-latest"
+# pipeline:
+#   trigger:
+#     - master
+#   pool:
+#     vmImage: "ubuntu-latest"
 
-  stages:
-    - stage: build app
-      displayName: "build app"
-      jobs:
-        -job: buildjob
+#   stages:
+#     - stage: build app
+#       displayName: "build app"
+#       jobs:
+#         -job: buildjob
 
-        steps:
-          - script: echo "building app"
-            displayName: "build app"
+#         steps:
+#           - script: echo "building app"
+#             displayName: "build app"
+
+
+- name: Install nginx
+  hosts: all
+  become: yes
+  tasks:
+    - name: "install nginx"
+      apt:
+        name: nginx
+        state: present
+    - name: "start nginx"
+      service:
+        name: nginx
+        state: started

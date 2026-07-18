@@ -553,17 +553,121 @@
 // }
 
 
-public class Main{
+// public class Main{
 
-    static void pattern(int n){
-        for(int i=0;i<n;i++){  // this line is for number of rows
-            for(int j=0;j<i+1;j++){ //this line is for number of star to be printed
-                System.out.print("*");
-            }
-            System.out.println();
-        }
-    }
-    public static void main(String[] args) {
-        pattern(4);
-    }
-} 
+//     static void pattern(int n){
+//         for(int i=n;i>0;i--){  // this line is for number of rows
+//             for(int j=0;j<i;j++){ //this line is for number of star to be printed
+//                 System.out.print("*");
+//             }
+//             System.out.println();
+//         }
+//     }
+//     public static void main(String[] args) {
+//         pattern(4);
+//     }
+// }
+
+// Oops-----------------------------------------------------------
+
+// class Employee{
+//     int id;
+//     String name;
+//     int salary;
+//     public void printdetails(){
+//         System.out.println("my id is "+id);
+//         System.out.println("my name is "+name);
+//         System.out.println("my salary is "+salary);
+//     }
+
+// }
+
+// public class Main{
+//     public static void main(String[] args) {
+//         System.out.println("this my custom class");
+//         Employee harry = new Employee();
+//         Employee shas= new Employee();
+//         harry.id = 1;
+//         harry.name = "Harry";
+//         shas.id = 2;
+//         shas.name = "Shas";
+
+//         System.out.println(harry.id);
+//         System.out.println(harry.name);
+//         System.out.println(shas.id);
+//         System.out.println(shas.name);
+        
+//         harry.printdetails();
+//     }
+// }
+
+
+// class cellphone{
+//     String name;
+//     public void ringing(){
+//         System.out.println("ringing..."+ name);
+
+//     }
+//     public void vibrating(){
+//         System.out.println("vibrating...");
+//     }
+// }
+
+// public class Main{
+//     public static void main(String[] args) {
+//         cellphone samsung= new cellphone();
+//         samsung.name="shashank";
+//         samsung.ringing();
+//         samsung.vibrating();
+//         System.out.println(samsung.name);
+
+//     }
+// }
+
+
+// class square{
+//     int side;
+//     public void side(){
+//         System.out.println("the area of the side is"+ side*side);
+//     }
+//     public void perimeter(){
+//         System.out.println("the area of the side is"+ side*side);
+//     }
+
+// }
+// public class Main{
+//     public static void main(String[] args) {
+//         square sq= new square();
+//         sq.side=5;
+//         sq.side();
+//         sq.perimeter();
+//     }
+// }
+
+// class tommy{
+//     String name;
+//     public void hit(){
+//         System.out.println("hitting the enemy");
+//     }
+//     public void run(){
+//         System.out.println("running the enemy");
+//     }
+//     public void fire(){
+//         System.out.println("firing the enemy");
+//     }
+// }
+// public class Main{
+//     public static void main(String[] args) {
+//         tommy t= new tommy();
+//         t.name="shashank";
+//         System.out.println(t.name);
+//         t.hit();
+//         t.run();
+//         t.fire();
+//     }
+// }
+
+
+
+
+
