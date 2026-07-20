@@ -188,6 +188,11 @@
 
 # print(sum)
 # ----------------------------------------------------------------------------
+#for loop in python
+# for letter in "python":
+#     print(letter)
+for count in range(10,1,-1):
+    print(count)
 
-
+print("hello world!")
 
