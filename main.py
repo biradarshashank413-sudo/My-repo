@@ -191,8 +191,52 @@
 #for loop in python
 # for letter in "python":
 #     print(letter)
-for count in range(10,1,-1):
-    print(count)
+# for count in range(10,1,-1):
+#     print(count)
 
-print("hello world!")
+# print("hello world!")
+# ------------------------------------------------------------------------
+#Star Pattern
+# for i in range(6,0,-1):
+#     for j in range(1,i+1):
+#         print(j,end="")
+    
+#     print()
 
+# for i in range(1,4):
+
+#     for j in range(3-i):
+#         print(" ",end="")
+#     for j in range(2 * i - 1): #Odd numbers are required for pyramid structure
+#         print("*",end="")
+#     print()
+
+# # ------------------------------------------------------
+# l = ["Harry", "Soham", "Sachin", "Rahul"] 
+# for name in l:
+#     if(name.startswith("S")):
+#         print(f"Hello {name}")
+# ----------------------------------------------------------/
+#prime number
+# n=int(input("enter the number: "))
+
+# for i in range(2,n):
+#     if(n%i)==0:
+#         print("number is not prime")
+#         break
+
+# else:
+#     print("number is prime")
+# -----------------------------------------------------------------
+#factorial number
+# n=int(input("enter the number: "))
+# product=1
+# for i in range(1,n+1):
+#     product=product*i
+    
+# print(f"the factorial number is {product}")
+# ------------------------------------------------------------
+#reverse multiplication
+# n=int(input("enter the number: "))
+# for i in range(10,0,-1):
+#     print(f"{n} X {i} = {n*i}")
