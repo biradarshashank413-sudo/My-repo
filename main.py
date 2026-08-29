@@ -240,3 +240,159 @@
 # n=int(input("enter the number: "))
 # for i in range(10,0,-1):
 #     print(f"{n} X {i} = {n*i}")
+# ---------------------------------------------------------------------
+# Fibonacci series
+# a=0
+# b=1
+# for i in range(10):
+#     print(a, end=",")
+
+#     c=a+b
+#     a = b
+#     b = c
+# ------------------------------------------------------------------
+# palindrome series
+# num=int(input("enter the number: "))
+# temp = num
+# reverse = 0
+# while num>0:
+#     digit = num % 10
+#     reverse = reverse* 10 + digit
+#     num = num //10
+
+# if temp == reverse:
+#     print("palindrome")
+# else:
+#     print("not palindrome")
+# ---------------------------------------------------------
+#count number of digits 
+# num = int(input("Enter the number: "))
+# count = 0
+# while num>0:
+#     num = num // 10
+#     count = count + 1
+
+# print(f"The number count is {count}")
+# --------------------------------------------------------
+#sum of digits 
+# num = int(input("enter the number: "))
+# total=0
+# while num>0:
+#     digit=num%10
+#     total=total+digit
+#     num = num//10
+# print("The sum of digits=",total)
+# -----------------------------------------------------------------
+#perfect number 
+# num=int(input("enter the number: "))
+# total=0
+# i=1
+# while i<num:
+#     if num%i==0:
+#         total=total+i
+#     i=i+1
+
+# if total==num:
+#     print("Perfect number")
+# else:
+#     print("not perfect number")
+# -----------------------------------------------------
+#list 
+# list=["apple","orange", 1,1.2,True]
+# list[1]="mango"
+# print(list[1:3])
+# marks=[80,90,70]
+# marks[1]=85
+# print(marks)
+# -----------------------------------------------------------
+# l1=[[1,2,3],["alice", 32.3],["hale",True]]#nested list
+# l1.sort()
+# l1.reverse()
+# l1.append(34)
+# l1.insert(3,77)
+# l1.extend([11,22,33])
+# l1.count(3)
+# l1.pop(2)#remove item by index value
+# l1.remove(3)#remove item by direct value
+# l1.clear()#give empty brackets
+# print(l1[0])
+# print(l1[1][0])
+# print(l1[2][1])
+# numbers=[1,2,3,4,5]
+# print(9 in numbers)
+# --------------------------------------------------------------------
+#sum of all elements in a list
+# number=[1,2,3,4,5]
+# total=0
+# for num in number:
+#     total=total+num
+# print(total)
+# sum=sum(number)/len(number)#short method
+# print(sum)
+# --------------------------------------------------------
+#largest number in list
+# number=[1,2,3,4,5]
+# largest=number[0]
+# for num in number:
+#     if num>largest:
+#         largest=num
+
+# print("Largest=",largest)
+# print(max(number))
+# print(min(number))
+# count=0
+# for num in number:#count of the list
+#     count=count+1
+# print("the count of numbers=",count)
+# ---------------------------------------------------------------
+# number=[1,2,3,3,4,4,4,4]
+# print(number.index(3))#count the index number value
+# print(number.count(3))# count how many times a number is repeated 
+# ---------------------------------------------------
+#print the number in reverse order
+# number=[1,2,3,4,5]
+# # number.reverse()# to print elements in reverse order 
+# for num in number:
+#     print(num)
+# -----------------------------------------------------
+#Tuple
+# number=(1,2,3)
+# # number[0]=23
+# print(number)
+# print(type(number))
+# -------------------------------------------------------
+# person=("alice",25,"trainner")
+# a=(10,)
+# print(type(a))
+# print(type(person))
+# name,age,role=person
+# print(age)
+# print(name)
+# --------------------------------------------------
+#tuple concatation
+# a=(1,2,3)
+# b=(4,5,6)
+# c=a+b
+# print(c)
+#swapping of numbers easy
+# a=10
+# b=20
+# print(a)
+# print(b)
+# a,b=b,a
+# print(a)
+# print(b)
+# -------------------------------------------------------
+# Write a program to accept marks of 3 students and display them in a sorted manner.
+# marks=[]
+# student1=int(input("enter the marks: "))
+# marks.append(student1)
+# student2=int(input("enter the marks: "))
+# marks.append(student2)
+# student3=int(input("enter the marks: "))
+# marks.append(student3)
+# marks.sort()
+# print(marks)
+number=(1,2,3,4,5,6)
+# print(number[1:6:1])
+# print(number[::-1])#reverse a tuple 
